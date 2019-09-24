@@ -1,4 +1,4 @@
-package requestClient;
+package requestclientconcurrent;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -33,8 +33,8 @@ public class Request {
                 }
             }
             long endTime = System.currentTimeMillis();
-            long duration = (endTime - startTime); 
-            System.err.println(duration);
+            double duration = (endTime - startTime)/1000.0; 
+            System.err.println("Execution time :  " + duration);
         }
 
     }
